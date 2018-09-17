@@ -21,7 +21,7 @@ OTHER_FILES += app.pri \
                project.pri
 
 DbTernaryClock.depends += libs
-DbZeiterfassung.depends += DbSketch libs
+DbZeiterfassung.depends += 3rdparty DbSketch libs
 
 include(installs.pri)
 win32: include(installs_win32.pri)
