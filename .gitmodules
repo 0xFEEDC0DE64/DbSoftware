@@ -1,0 +1,51 @@
+[submodule "3rdparty/Quazip"]
+	path = 3rdparty/Quazip
+	url = https://github.com/0xFEEDC0DE64/Quazip.git
+[submodule "libs/DbCoreLib"]
+	path = libs/DbCoreLib
+	url = https://github.com/0xFEEDC0DE64/DbCoreLib.git
+[submodule "libs/DbGuiLib"]
+	path = libs/DbGuiLib
+	url = https://github.com/0xFEEDC0DE64/DbGuiLib.git
+[submodule "libs/unittests/TstFixedSizeMatrix"]
+	path = libs/unittests/TstFixedSizeMatrix
+	url = https://github.com/0xFEEDC0DE64/TstFixedSizeMatrix.git
+[submodule "DbDatabaseTree"]
+	path = DbDatabaseTree
+	url = https://github.com/0xFEEDC0DE64/DbDatabaseTree.git
+[submodule "DbHashCracker"]
+	path = DbHashCracker
+	url = https://github.com/0xFEEDC0DE64/DbHashCracker.git
+[submodule "DbMessaging"]
+	path = DbMessaging
+	url = https://github.com/0xFEEDC0DE64/DbMessaging.git
+[submodule "DbNeuralNet"]
+	path = DbNeuralNet
+	url = https://github.com/0xFEEDC0DE64/DbNeuralNet.git
+[submodule "DbPathFinder"]
+	path = DbPathFinder
+	url = https://github.com/0xFEEDC0DE64/DbPathFinder.git
+[submodule "DbPicSync"]
+	path = DbPicSync
+	url = https://github.com/0xFEEDC0DE64/DbPicSync.git
+[submodule "DbRadioDumper"]
+	path = DbRadioDumper
+	url = https://github.com/0xFEEDC0DE64/DbRadioDumper.git
+[submodule "DbSerialServer"]
+	path = DbSerialServer
+	url = https://github.com/0xFEEDC0DE64/DbSerialServer.git
+[submodule "DbSketch"]
+	path = DbSketch
+	url = https://github.com/0xFEEDC0DE64/DbSketch.git
+[submodule "DbTernaryClock"]
+	path = DbTernaryClock
+	url = https://github.com/0xFEEDC0DE64/DbTernaryClock.git
+[submodule "DbTictactoe"]
+	path = DbTictactoe
+	url = https://github.com/0xFEEDC0DE64/DbTictactoe.git
+[submodule "DbWebserver"]
+	path = DbWebserver
+	url = https://github.com/0xFEEDC0DE64/DbWebserver.git
+[submodule "DbZeiterfassung"]
+	path = DbZeiterfassung
+	url = https://github.com/0xFEEDC0DE64/DbZeiterfassung.git
