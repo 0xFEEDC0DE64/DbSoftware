@@ -49,3 +49,6 @@
 [submodule "DbZeiterfassung"]
 	path = DbZeiterfassung
 	url = https://github.com/0xFEEDC0DE64/DbZeiterfassung.git
+[submodule "libs/DbNetworkLib"]
+	path = libs/DbNetworkLib
+	url = https://github.com/0xFEEDC0DE64/DbNetworkLib.git

@@ -25,6 +25,11 @@ for(DBLIB, DBLIBS) {
 
         INCLUDEPATH += $$PWD/libs/DbGuiLib
         DEPENDPATH += $$PWD/libs/DbGuiLib
+    } else: equals(DBLIB, "dbnetwork") {
+        LIBS += -ldbnetwork
+
+        INCLUDEPATH += $$PWD/libs/DbNetworkLib
+        DEPENDPATH += $$PWD/libs/DbNetworkLib
     } else: equals(DBLIB, "messaginglib") {
         LIBS += -lmessaginglib
 
