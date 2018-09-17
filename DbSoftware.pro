@@ -20,7 +20,9 @@ OTHER_FILES += app.pri \
                lib.pri \
                project.pri
 
+DbSketch.depends += 3rdparty
 DbTernaryClock.depends += libs
+DbWebserver.depends += libs
 DbZeiterfassung.depends += 3rdparty DbSketch libs
 
 include(installs.pri)
