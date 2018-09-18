@@ -18,53 +18,53 @@ for(DBLIB, DBLIBS) {
     equals(DBLIB, "dbcore") {
         LIBS += -ldbcore
 
-        INCLUDEPATH += $$PWD/libs/DbCoreLib
-        DEPENDPATH += $$PWD/libs/DbCoreLib
+        INCLUDEPATH += $${PROJECT_ROOT}/libs/DbCoreLib
+        DEPENDPATH += $${PROJECT_ROOT}/libs/DbCoreLib
     } else: equals(DBLIB, "dbgui") {
         LIBS += -ldbgui
 
-        INCLUDEPATH += $$PWD/libs/DbGuiLib
-        DEPENDPATH += $$PWD/libs/DbGuiLib
+        INCLUDEPATH += $${PROJECT_ROOT}/libs/DbGuiLib
+        DEPENDPATH += $${PROJECT_ROOT}/libs/DbGuiLib
     } else: equals(DBLIB, "dbnetwork") {
         LIBS += -ldbnetwork
 
-        INCLUDEPATH += $$PWD/libs/DbNetworkLib
-        DEPENDPATH += $$PWD/libs/DbNetworkLib
+        INCLUDEPATH += $${PROJECT_ROOT}/libs/DbNetworkLib
+        DEPENDPATH += $${PROJECT_ROOT}/libs/DbNetworkLib
     } else: equals(DBLIB, "messaginglib") {
         LIBS += -lmessaginglib
 
-        INCLUDEPATH += $$PWD/DbMessaging/messaginglib
-        DEPENDPATH += $$PWD/DbMessaging/messaginglib
+        INCLUDEPATH += $${PROJECT_ROOT}/DbMessaging/messaginglib
+        DEPENDPATH += $${PROJECT_ROOT}/DbMessaging/messaginglib
     } else: equals(DBLIB, "neuralnetlib") {
         LIBS += -lneuralnetlib
 
-        INCLUDEPATH += $$PWD/DbNeuralNet/neuralnetlib
-        DEPENDPATH += $$PWD/DbNeuralNet/neuralnetlib
+        INCLUDEPATH += $${PROJECT_ROOT}/DbNeuralNet/neuralnetlib
+        DEPENDPATH += $${PROJECT_ROOT}/DbNeuralNet/neuralnetlib
     } else: equals(DBLIB, "sketchlib") {
         LIBS += -lsketchlib
 
-        INCLUDEPATH += $$PWD/DbSketch/sketchlib
-        DEPENDPATH += $$PWD/DbSketch/sketchlib
+        INCLUDEPATH += $${PROJECT_ROOT}/DbSketch/sketchlib
+        DEPENDPATH += $${PROJECT_ROOT}/DbSketch/sketchlib
     } else: equals(DBLIB, "webserverlib") {
         LIBS += -lwebserverlib
 
-        INCLUDEPATH += $$PWD/DbWebserver/webserverlib
-        DEPENDPATH += $$PWD/DbWebserver/webserverlib
+        INCLUDEPATH += $${PROJECT_ROOT}/DbWebserver/webserverlib
+        DEPENDPATH += $${PROJECT_ROOT}/DbWebserver/webserverlib
     } else: equals(DBLIB, "zeiterfassungcore") {
         LIBS += -lzeiterfassungcore
 
-        INCLUDEPATH += $$PWD/DbZeiterfassung/zeiterfassungcorelib
-        DEPENDPATH += $$PWD/DbZeiterfassung/zeiterfassungcorelib
+        INCLUDEPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungcorelib
+        DEPENDPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungcorelib
     } else: equals(DBLIB, "zeiterfassunggui") {
         LIBS += -lzeiterfassunggui
 
-        INCLUDEPATH += $$PWD/DbZeiterfassung/zeiterfassungguilib
-        DEPENDPATH += $$PWD/DbZeiterfassung/zeiterfassungguilib
+        INCLUDEPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungguilib
+        DEPENDPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungguilib
     } else: equals(DBLIB, "quazip") {
         LIBS += -lquazip
 
-        INCLUDEPATH += $$PWD/3rdparty/Quazip
-        DEPENDPATH += $$PWD/3rdparty/Quazip
+        INCLUDEPATH += $${PROJECT_ROOT}/3rdparty/Quazip
+        DEPENDPATH += $${PROJECT_ROOT}/3rdparty/Quazip
     } else: message("ERROR: Unknown dblib $$DBLIB")
 }
 

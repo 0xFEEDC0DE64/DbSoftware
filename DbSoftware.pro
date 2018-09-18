@@ -7,9 +7,10 @@ SUBDIRS += 3rdparty \
            DbNeuralNet \
            DbPathFinder \
            DbPicSync \
-           DbRadioDumper \
-           DbSerialServer \
-           DbSketch \
+           DbRadioDumper
+qtHaveModule(serialport): SUBDIRS += DbSerialServer
+else: message("serialport is missing, will not build DbSerialServer")
+SUBDIRS += DbSketch \
            DbTernaryClock \
            DbTictactoe \
            DbWebserver \
