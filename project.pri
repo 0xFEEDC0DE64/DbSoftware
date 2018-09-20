@@ -14,53 +14,57 @@ DEFINES += QT_DEPRECATED_WARNINGS \
     else: LIBS += -Wl,-rpath=\\\$$ORIGIN/../lib -L$${OUT_PWD}/$${PROJECT_ROOT}/lib
 }
 
+contains(DBLIBS, sketchlib): DBLIBS *= quazip
+contains(DBLIBS, webserverlib): DBLIBS *= dbnetwork
+contains(DBLIBS, zeiterfassunggui): DBLIBS *= dbcore
+
 for(DBLIB, DBLIBS) {
-    equals(DBLIB, "dbcore") {
+    equals(DBLIB, dbcore) {
         LIBS += -ldbcore
 
         INCLUDEPATH += $${PROJECT_ROOT}/libs/DbCoreLib
         DEPENDPATH += $${PROJECT_ROOT}/libs/DbCoreLib
-    } else: equals(DBLIB, "dbgui") {
+    } else: equals(DBLIB, dbgui) {
         LIBS += -ldbgui
 
         INCLUDEPATH += $${PROJECT_ROOT}/libs/DbGuiLib
         DEPENDPATH += $${PROJECT_ROOT}/libs/DbGuiLib
-    } else: equals(DBLIB, "dbnetwork") {
+    } else: equals(DBLIB, dbnetwork) {
         LIBS += -ldbnetwork
 
         INCLUDEPATH += $${PROJECT_ROOT}/libs/DbNetworkLib
         DEPENDPATH += $${PROJECT_ROOT}/libs/DbNetworkLib
-    } else: equals(DBLIB, "messaginglib") {
+    } else: equals(DBLIB, messaginglib) {
         LIBS += -lmessaginglib
 
         INCLUDEPATH += $${PROJECT_ROOT}/DbMessaging/messaginglib
         DEPENDPATH += $${PROJECT_ROOT}/DbMessaging/messaginglib
-    } else: equals(DBLIB, "neuralnetlib") {
+    } else: equals(DBLIB, neuralnetlib) {
         LIBS += -lneuralnetlib
 
         INCLUDEPATH += $${PROJECT_ROOT}/DbNeuralNet/neuralnetlib
         DEPENDPATH += $${PROJECT_ROOT}/DbNeuralNet/neuralnetlib
-    } else: equals(DBLIB, "sketchlib") {
+    } else: equals(DBLIB, sketchlib) {
         LIBS += -lsketchlib
 
         INCLUDEPATH += $${PROJECT_ROOT}/DbSketch/sketchlib
         DEPENDPATH += $${PROJECT_ROOT}/DbSketch/sketchlib
-    } else: equals(DBLIB, "webserverlib") {
+    } else: equals(DBLIB, webserverlib) {
         LIBS += -lwebserverlib
 
         INCLUDEPATH += $${PROJECT_ROOT}/DbWebserver/webserverlib
         DEPENDPATH += $${PROJECT_ROOT}/DbWebserver/webserverlib
-    } else: equals(DBLIB, "zeiterfassungcore") {
+    } else: equals(DBLIB, zeiterfassungcore) {
         LIBS += -lzeiterfassungcore
 
         INCLUDEPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungcorelib
         DEPENDPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungcorelib
-    } else: equals(DBLIB, "zeiterfassunggui") {
+    } else: equals(DBLIB, zeiterfassunggui) {
         LIBS += -lzeiterfassunggui
 
         INCLUDEPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungguilib
         DEPENDPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungguilib
-    } else: equals(DBLIB, "quazip") {
+    } else: equals(DBLIB, quazip) {
         LIBS += -lquazip
 
         INCLUDEPATH += $${PROJECT_ROOT}/3rdparty/Quazip

@@ -21,6 +21,7 @@ OTHER_FILES += app.pri \
                lib.pri \
                project.pri
 
+contains(SUBDIRS, DbSerialServer): DbSerialServer.depends += libs
 DbSketch.depends += 3rdparty
 DbTernaryClock.depends += libs
 DbWebserver.depends += libs
