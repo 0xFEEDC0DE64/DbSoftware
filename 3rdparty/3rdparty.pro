@@ -1,3 +1,3 @@
 TEMPLATE = subdirs
 
-SUBDIRS += Quazip
+exists(Quazip/Quazip.pro): SUBDIRS += Quazip

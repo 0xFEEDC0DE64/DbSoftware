@@ -1,3 +1,3 @@
 TEMPLATE = subdirs
 
-SUBDIRS += TstFixedSizeMatrix
+exists(TstFixedSizeMatrix/TstFixedSizeMatrix.pro): SUBDIRS += TstFixedSizeMatrix
