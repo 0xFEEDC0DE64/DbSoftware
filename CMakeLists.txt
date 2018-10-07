@@ -2,8 +2,12 @@ cmake_minimum_required(VERSION 2.8.11)
 project(DbSoftware)
 
 set(CMAKE_CXX_STANDARD 14)
-
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
@@ -13,7 +17,9 @@ find_package(Qt5Widgets CONFIG REQUIRED)
 find_package(Qt5Network CONFIG REQUIRED)
 find_package(Qt5Sql CONFIG REQUIRED)
 find_package(Qt5SerialPort CONFIG REQUIRED)
+find_package(Qt5Multimedia CONFIG REQUIRED)
 find_package(Qt5Test CONFIG REQUIRED)
+find_package(Qt5UiTools CONFIG REQUIRED)
 
 add_subdirectory(3rdparty)
 add_subdirectory(DbDatabaseTree)
