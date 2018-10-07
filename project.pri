@@ -59,6 +59,11 @@ for(DBLIB, DBLIBS) {
 
         INCLUDEPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungcorelib
         DEPENDPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungcorelib
+    } else: equals(DBLIB, zeiterfassungnetwork) {
+        LIBS += -lzeiterfassungnetwork
+
+        INCLUDEPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungnetworklib
+        DEPENDPATH += $${PROJECT_ROOT}/DbZeiterfassung/zeiterfassungnetworklib
     } else: equals(DBLIB, zeiterfassunggui) {
         LIBS += -lzeiterfassunggui
 
