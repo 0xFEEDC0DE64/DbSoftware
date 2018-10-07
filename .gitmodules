@@ -7,9 +7,6 @@
 [submodule "libs/DbGuiLib"]
 	path = libs/DbGuiLib
 	url = https://github.com/0xFEEDC0DE64/DbGuiLib.git
-[submodule "libs/unittests/TstFixedSizeMatrix"]
-	path = libs/unittests/TstFixedSizeMatrix
-	url = https://github.com/0xFEEDC0DE64/TstFixedSizeMatrix.git
 [submodule "DbDatabaseTree"]
 	path = DbDatabaseTree
 	url = https://github.com/0xFEEDC0DE64/DbDatabaseTree.git
