@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 2.8.11)
 project(DbSoftware)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -25,6 +25,15 @@ find_package(Qt5SerialPort CONFIG REQUIRED)
 find_package(Qt5Multimedia CONFIG REQUIRED)
 find_package(Qt5Test CONFIG REQUIRED)
 find_package(Qt5UiTools CONFIG REQUIRED)
+find_package(Qt5LinguistTools CONFIG REQUIRED)
+
+FUNCTION(PREPEND var prefix)
+   SET(listVar "")
+   FOREACH(f ${ARGN})
+      LIST(APPEND listVar "${prefix}/${f}")
+   ENDFOREACH(f)
+   SET(${var} "${listVar}" PARENT_SCOPE)
+ENDFUNCTION(PREPEND)
 
 add_subdirectory(3rdparty)
 add_subdirectory(DbDatabaseTree)
@@ -64,8 +73,10 @@ execute_process(COMMAND ${QT_QMAKE_EXECUTABLE} -query QT_INSTALL_TRANSLATIONS
                 OUTPUT_STRIP_TRAILING_WHITESPACE
 )
 
-list(TRANSFORM QT_TRANSLATIONS
-     PREPEND ${QT_INSTALL_TRANSLATIONS}/)
+PREPEND(QT_TRANSLATIONS ${QT_INSTALL_TRANSLATIONS}/ ${QT_TRANSLATIONS})
+
+#list(TRANSFORM QT_TRANSLATIONS
+#     PREPEND ${QT_INSTALL_TRANSLATIONS}/)
 
 file(COPY ${QT_TRANSLATIONS}
      DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/translations)
