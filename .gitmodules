@@ -49,3 +49,6 @@
 [submodule "libs/DbNetworkLib"]
 	path = libs/DbNetworkLib
 	url = https://github.com/0xFEEDC0DE64/DbNetworkLib.git
+[submodule "DbNesEmulator"]
+	path = DbNesEmulator
+	url = https://github.com/0xFEEDC0DE64/DbNesEmulator.git
