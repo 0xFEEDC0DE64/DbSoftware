@@ -4,13 +4,11 @@ set(QT_TRANSLATIONS
     qt_en.qm
     qtbase_en.qm
     qtmultimedia_en.qm
-    qtquick1_en.qm
     qtscript_en.qm
     qtxmlpatterns_en.qm
     qt_de.qm
     qtbase_de.qm
     qtmultimedia_de.qm
-    qtquick1_de.qm
     qtscript_de.qm
     qtxmlpatterns_de.qm
 )
