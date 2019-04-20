@@ -52,3 +52,6 @@
 [submodule "DbNesEmulator"]
 	path = DbNesEmulator
 	url = https://github.com/0xFEEDC0DE64/DbNesEmulator.git
+[submodule "DbLogAnalyzer"]
+	path = DbLogAnalyzer
+	url = https://github.com/0xFEEDC0DE64/DbLogAnalyzer.git
